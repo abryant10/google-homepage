@@ -2,4 +2,42 @@ ul {
     list-style-type: none;
     padding: 0;
     margin: 0;
+    text-decoration: none;
+}
+a {
+    text-decoration: none;
+    color: #000000;
+}
+li {
+    display: inline;8
+}
+header {
+    width: 100%;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
+.topnavleft {
+    grid-column: 1;
+}
+.topnavright {
+    grid-column: 2;
+    display: grid;
+    justify-self: flex-end;
+    grid-template-columns: 1fr 1fr 1fr;
+
+}
+
+.gmailimages {
+    grid-column: 1;
+    background-color: blue;
+}
+
+.squares {
+    grid-column: 2;
+    background-color: rgb(91, 91, 173);
+}
+
+.profilepic {
+    grid-column: 3;
+    background-color: chartreuse;
 }
