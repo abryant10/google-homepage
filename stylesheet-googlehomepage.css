@@ -1,3 +1,11 @@
+/* things to add
+
+- fix movement of bottom nav
+- fix changing sizes of search bar
+-remove blue serach bar border on click
+*/
+
+
 ul {
     list-style-type: none;
     padding: 0;
@@ -6,38 +14,182 @@ ul {
 }
 a {
     text-decoration: none;
-    color: #000000;
+    color: #4e4e4e;
+    padding: 6px;
+    font-family: sans-serif;
+    font-size: 13px;
+    white-space: nowrap;
+}
+a:hover{
+    text-decoration: underline;
 }
 li {
-    display: inline;8
+    display: inline;
+}
+.roundphoto {
+    border-radius: 50%;
+    margin-right: 20px;
 }
 header {
     width: 100%;
-    display: grid;
-    grid-template-columns: 1fr 1fr;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    margin-right: 20px;
+    margin-left: 10px;
+    
 }
 .topnavleft {
-    grid-column: 1;
+    display: flex;
 }
 .topnavright {
-    grid-column: 2;
-    display: grid;
+    
+    display: flex;
     justify-self: flex-end;
-    grid-template-columns: 1fr 1fr 1fr;
+    align-items: center;
+    grid-template-columns: 200px 50px 50px;
 
 }
 
 .gmailimages {
-    grid-column: 1;
-    background-color: blue;
+    display: flex;
+    justify-self: end;
+    padding: 4px;
 }
 
 .squares {
-    grid-column: 2;
-    background-color: rgb(91, 91, 173);
+    display: flex;
+    justify-self: end;
+    padding: 4px;
+    opacity: 0.5;
 }
 
 .profilepic {
-    grid-column: 3;
-    background-color: chartreuse;
+    display: flex;
+    justify-self: end;
+    padding: 4px;
+}
+
+.squares:hover {
+    opacity: 1;
+}
+
+.logorow {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    margin-top: 100px;
+}
+
+.googleimg {
+    display: flex;
+    align-self: center;
+}
+.sharelink {
+    display: flex;
+    align-self: flex-end;
+}
+
+.searchbartotal{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    background-color: rgb(255, 255, 255);
+    margin-top: 40px;
+    margin-bottom: 40px;
+    border-radius: 50px;
+    border-style: solid;
+    border-width: 1px;
+    border-color: rgb(214, 214, 214);
+}
+.searchbartotal:hover {
+    box-shadow: 0px 4px 5px 2px #dddcdc;
+    border: none;
+}
+.searchbartotal2{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    background-color: rgb(255, 255, 255);    
+}
+.mag{
+position: relative;
+left: 7px;
+margin-right: 15px;
+margin-left: 10px;
+opacity: 85%;
+
+}
+.searchbar{
+width: 400px;
+height: 40px;
+border: none;
+
+}
+.mic{
+margin-right: 10px;
+}
+
+
+.buttons{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+
+.buttonstyle {
+    border: none;
+    width: 135px;
+    height: 35px;
+    color: rgb(65, 65, 65);
+    background-color: rgb(248, 248, 248);
+    margin: 10px;
+    border-radius: 3px;
+}
+
+.buttonstyle:hover {
+
+}
+
+
+
+
+
+.footer {
+    position: fixed;
+    display: flex;
+    justify-content: space-between;
+    align-items: baseline;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    background-color: rgb(228, 228, 228);
+    border-top: rgb(209, 207, 207);
+    border-style: solid;
+    border-width: 1px;
+    padding: 5px;
+    margin-right: 20px;
+}
+.footeritem{
+    padding: 10px;
+}
+.footerlist {
+    display:flex;
+    
+}
+.footerlist2 {
+    display:flex;
+    justify-self: flex-end;
+    margin-right: 20px;
+    
+}
+.footercenter {
+    display:flex;
+}
+.leaf{
+    float: left;
+    margin-top: 3px;
 }
