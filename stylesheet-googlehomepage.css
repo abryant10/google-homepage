@@ -1,11 +1,3 @@
-/* things to add
-
-- fix movement of bottom nav
-- fix changing sizes of search bar
--remove blue serach bar border on click
-*/
-
-
 ul {
     list-style-type: none;
     padding: 0;
@@ -51,37 +43,31 @@ header {
     grid-template-columns: 200px 50px 50px;
 
 }
-
 .gmailimages {
     display: flex;
     justify-self: end;
     padding: 4px;
 }
-
 .squares {
     display: flex;
     justify-self: end;
     padding: 4px;
     opacity: 0.5;
 }
-
 .profilepic {
     display: flex;
     justify-self: end;
     padding: 4px;
 }
-
 .squares:hover {
     opacity: 1;
 }
-
 .logorow {
     display: flex;
     flex-direction: row;
     justify-content: center;
     margin-top: 100px;
 }
-
 .googleimg {
     display: flex;
     align-self: center;
@@ -90,7 +76,6 @@ header {
     display: flex;
     align-self: flex-end;
 }
-
 .searchbartotal{
     display: flex;
     flex-direction: row;
@@ -125,21 +110,21 @@ opacity: 85%;
 }
 .searchbar{
 width: 400px;
+min-width: 50px;
 height: 40px;
-border: none;
-
+border: 0px solid;
+}
+.searchbar:focus{
+    outline: none;
 }
 .mic{
 margin-right: 10px;
 }
-
-
 .buttons{
     display: flex;
     flex-direction: row;
     justify-content: center;
 }
-
 .buttonstyle {
     border: none;
     width: 135px;
@@ -149,15 +134,12 @@ margin-right: 10px;
     margin: 10px;
     border-radius: 3px;
 }
-
 .buttonstyle:hover {
-
+    box-shadow: 0px 3px 5px 1px #dddcdc;
+    border-style: solid;
+    border-color: rgb(212, 212, 212);
+    border-width: 1px;
 }
-
-
-
-
-
 .footer {
     position: fixed;
     display: flex;
@@ -190,6 +172,12 @@ margin-right: 10px;
     display:flex;
 }
 .leaf{
-    float: left;
     margin-top: 3px;
 }
+@media (max-width: 638px) {
+    .footer {
+        flex-direction: column;
+        align-items: center;
+    }
+}
+
